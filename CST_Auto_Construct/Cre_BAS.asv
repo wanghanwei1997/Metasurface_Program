@@ -14,15 +14,15 @@ classdef Cre_BAS
         function [] = plottest(obj,Name)
             fprintf(obj.fileID,[Name,'\n']);
         end
-        function [] = rotate(obj, componant,Center, Angle)
+        function [] = rotate(obj, string, componant,Center, Angle)
             fprintf(obj.fileID,' With Transform\n');
             fprintf(obj.fileID,'  .Reset\n');
             fprintf(obj.fileID,['  .Name "',componant,'"\n']);
             fprintf(obj.fileID,'  .Origin "Free"\n');
             fprintf(obj.fileID,['  .Center "',num2str(Center(1)),'", "',...
                 num2str(Center(2)),'", "',num2str(Center(3)),'"\n']);
-            fprintf(obj.fileID,['  .Angle "',Angle(1),'", "',...
-            Angle(2),'", "',Angle(3),'"\n']);
+            fprintf(obj.fileID,['  .Angle "',num2str(Angle(1)),'", "',...
+                num2str(Angle(2)),'", "',num2str(Angle(3)),'"\n']);
             fprintf(obj.fileID,'  .MultipleObjects "False"\n');
             fprintf(obj.fileID,'  .GroupObjects "False"\n');
             fprintf(obj.fileID,'  .Repetitions "1"\n');

@@ -1,3 +1,0 @@
-phase_Matrix = ['f','e','d,e,f;e,c,b,c,e;d,b,a,b,d;e,c,b,c,e;f,e,d,e,f];
-nanorod('cell_Micro.txt',phase_Matrix);
-        

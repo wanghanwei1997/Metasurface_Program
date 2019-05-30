@@ -1,0 +1,52 @@
+Here are the simulation results of study "Qusi-Periodical Effects of Metasurface" by Han-wei Wang
+Please contact me if you have any questions at WeChat: wanghanwei1997, Tel: 13102109661
+
+The folder "Results" stores all simulation result;
+The folders end with ".cst" are models, with the notes below.
+Other folders stores the simulation results. no need to open!
+
+NOTES: 
+Edit by 2018/09/21
+Unit-180329: basically useless
+Unit-180329-2: with the problem of material overlap
+Unit-180404: with baseboard, with the structure: strip-glass-base board
+Unit-180404-2(Nature): structure used in a paper published in Nature [1]. Refers discussion PPT of 2018/04/06. (Abondoned)
+Unit-180406(Nature): same as above but correct some parameters errors.(Without ground, abondoned)
+Unit-180406-transmitting: transmitting structure used in [2], due to the parameters and gap, abondoned.
+Unit-180406-2(Transmiting): same as the last one but correct errors.
+Unit-180406-4(Refwithbase): same as ...06(Nature) but add ground.
+Unit-180412-1: Reflected structure with field moniter.
+Unit-180426: Same as the last one (have analysis in the result file).
+Quasi-180509_1: unit under different environment (3*3, observating the central unit, 56% after 12 hours).
+Quasi-180510: unit under different environment (2*2, still very slow, 46% after 3 hours)
+Quasi-180510_2: same as Quasi-190509_1 but without floquet mode(Still very slow).
+Unit-180510_3: unit with open boundary.
+Quasi-180510_4: unit (1*2, different angle)
+(The problem may lays in we should use time domain slover instead of frequency domain solver)
+Unit-180515_1: single unit under periodical environment using frequency domain solver (same as Unit-180412-1).
+Unit-180515_2: same as above but without reflect unit.
+Unit-180516-1: single unit without periodical environment (using time domain solver, abondoned as no not bother to rebuild the model)
+Unit-180516-2: single unit without periodical environment (using frequency domain solver) E is x dirrectional polarized.
+Unit-180516-3: ... y dirrectional polarized.
+Unit-180516-4: without reflection unit (x dirrection polarized).
+Unit-180516-5: without relflection unit (y dirrection polarized).
+Quasi-180517-1: quasi-periodical structure using time domain solver.
+Quasi-180521-1: quasi-periodical structure with 30% shifted environment.
+Quasi-181012: above inclined with X
+Quasi-181012-2: inclined with Y
+Unit-181012: use time domain solver and periodical boundary
+%---------------------------------------------------------------------------------------
+  Tips of how to use VB for automatic array construction and processing:
+      1. in the CST, home, Macros, open VBA macro editor to start the editing proface.
+      2. "?" is the right-up corner for help (only can be opened by IE exployer)
+      Chick the details in the "VBA language"
+%--------------------------------------------------------------------------------------- 
+
+References£º
+[1]. Zheng G, M¨¹hlenbernd H, Kenney M, et al. Metasurface holograms reaching 80% efficiency.[J]. Nature Nanotechnology, 2015, 10(4):308-312.
+[2]. Huang L. Three-dimensional optical holography using a plasmonic metasurface[J]. Nature Communications, 2014, 4(7):2808.
+
+
+
+
+

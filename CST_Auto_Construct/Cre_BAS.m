@@ -3,7 +3,7 @@ classdef Cre_BAS
     %   此处显示详细说明
     
     properties
-        filename = 'Matlab_Micros.txt';
+        glofilename = 'Matlab_Micros.txt';
         fileID;
     end
     

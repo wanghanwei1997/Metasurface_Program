@@ -3,13 +3,17 @@ classdef Cre_BAS
     %   此处显示详细说明
     
     properties
+<<<<<<< HEAD
         glofilename = 'Matlab_Micros.txt';
+=======
+    %    filename = 'Matlab_Micros.txt';
+>>>>>>> 67a4dbe87bc171f9b877489ff8cc78153b1e6fbd
         fileID;
     end
     
     methods
-        function [ obj ] = Cre_BAS()
-            obj.fileID = fopen( obj.filename, 'w');
+        function [ obj ] = Cre_BAS(filename)
+            obj.fileID = fopen( filename, 'w');
         end
         function [] = plottest(obj,Name)
             fprintf(obj.fileID,[Name,'\n']);
@@ -21,8 +25,8 @@ classdef Cre_BAS
             fprintf(obj.fileID,'  .Origin "Free"\n');
             fprintf(obj.fileID,['  .Center "',num2str(Center(1)),'", "',...
                 num2str(Center(2)),'", "',num2str(Center(3)),'"\n']);
-            fprintf(obj.fileID,['  .Angle "',num2str(Angle(1)),'", "',...
-                num2str(Angle(2)),'", "',num2str(Angle(3)),'"\n']);
+            fprintf(obj.fileID,['  .Angle "',Angle(1),'", "',...
+            Angle(2),'", "',Angle(3),'"\n']);
             fprintf(obj.fileID,'  .MultipleObjects "False"\n');
             fprintf(obj.fileID,'  .GroupObjects "False"\n');
             fprintf(obj.fileID,'  .Repetitions "1"\n');

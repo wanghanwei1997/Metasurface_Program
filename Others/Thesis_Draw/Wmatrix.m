@@ -6,12 +6,12 @@ B4 = 0.2;
 B5 = 0.1;
 nx = 20;
 ny = 20;
-
+tot = nx*ny;
 %% 
-W = sparse(nx*ny, nx*ny);
-for i = 1:nx*ny
+W = sparse(tot, tot);
+for i = 1:tot
     W(i,i) = 2;
-    for j = 1:nx*ny
+    for j = 1:tot
         x1 = floor((i-1)/nx);
         y1 = i - x1*nx;
         x2 = floor((j-1)/ny);
